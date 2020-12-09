@@ -187,7 +187,7 @@ img {
 
 .plan-container {
     background-color: var(--light-color);
-    padding: 40px 80px;
+    padding: 25px 55px;
     border-radius: 15px;
     height: 700px;
 }
@@ -204,6 +204,10 @@ img {
     .cat-customers .grid {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
+    }
+
+    .container {
+        padding: 0 20px;
     }
 
     .photo-grid {
@@ -228,7 +232,7 @@ img {
     }
 
     .navbar {
-        height: 110px;
+        height: 100px;
     }
 
     .quick-info .grid {
@@ -256,5 +260,32 @@ img {
 
     .plan-container {
         height: 100%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .subscribe-now .flex, .newsletter .flex, .navbar > .flex {
+        flex-direction: column;
+    }
+
+    .navbar > .flex {
+        justify-content: unset;
+    }
+
+    .newsletter .flex {
+        gap: 30px;
+    }
+
+    .subscriptions {
+        padding: 10px 2px;
+    }
+
+    .charity, .cat-customers {
+        padding: 10px;
+    }
+
+    .subscribe-now, .newsletter {
+        padding: 20px;
     }
 }
